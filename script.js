@@ -13,12 +13,12 @@ const message = document.getElementById("message");
 const input1 = document.getElementById("text1");
 const displayDefinition = document.getElementById("container");
 
-function generateSearchButton() {
+function searchButton() {
     const input1Text = input1.value.toLowerCase();
 
     if (input1Text == "") {
         displayDefinition.style.color = "red";
-        displayDefinition.innerHTML = "Introdu un cuvant!";
+        displayDefinition.innerHTML = "You must enter a word!";
     } else if (library[input1Text]) {
         displayDefinition.style.color = "green";
         displayDefinition.innerHTML = input1Text.charAt(0).toUpperCase() + input1Text.slice(1) + " = " + library[input1Text];
@@ -27,7 +27,7 @@ function generateSearchButton() {
         message.innerHTML = "";
     } else {
         displayDefinition.style.color = "red";
-        displayDefinition.innerHTML = "Nu exista acest cuvant!";
+        displayDefinition.innerHTML = "This word does not exist!";
         
         message.innerHTML = "";
     }
@@ -43,14 +43,14 @@ function addWord() {
     if (newInput && newDefinition) {
         library[newInput] = newDefinition;
         message.style.color = "green";
-        message.innerHTML = "Cuvant adaugat cu succes!";
+        message.innerHTML = "Word added!";
         
         input2.value = "";
         input3.value = "";
         displayDefinition.innerHTML = "";
     } else {
         message.style.color = "red";
-        message.innerHTML = "Completeaza ambele campuri!";
+        message.innerHTML = "Please fill both lanes!";
 
         displayDefinition.innerHTML = "";
     }
