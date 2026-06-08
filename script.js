@@ -1,13 +1,14 @@
 const library = {"compass": "instrument that shows the direction of north and helps with navigation.",
-"volcano": "mountain through which lava, gases, and ash reach the surface.",
-"ecosystem": "system consisting of living organisms and the environment in which they live.",
-"archive": "place where documents are stored for future reference.",
-"nectar": "sweet liquid produced by flowers and used by bees.",
-"orbit": "path followed by a celestial body around another body.",
-"catalyst": "substance that speeds up a chemical reaction without being consumed.",
-"model": "small-scale representation of an object, building, or project.",
-"peninsula": "portion of land surrounded by water on three sides.",
-"symbol": "sign or image that represents an idea, object, or concept."}
+    "volcano": "mountain through which lava, gases, and ash reach the surface.",
+    "ecosystem": "system consisting of living organisms and the environment in which they live.",
+    "archive": "place where documents are stored for future reference.",
+    "nectar": "sweet liquid produced by flowers and used by bees.",
+    "orbit": "path followed by a celestial body around another body.",
+    "catalyst": "substance that speeds up a chemical reaction without being consumed.",
+    "model": "small-scale representation of an object, building, or project.",
+    "peninsula": "portion of land surrounded by water on three sides.",
+    "symbol": "sign or image that represents an idea, object, or concept."
+};
 
 const message = document.getElementById("message");
 const libraryInput = document.getElementById("libraryInput");
